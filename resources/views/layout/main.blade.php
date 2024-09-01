@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin</title>
-  <link rel="shortcut icon" type="image/png" href="{{asset('template/assets/images/logos/logo-swara.png')}}" />
+  <link rel="shortcut icon" type="image/png" href="{{asset('template/assets/images/logos/Rs_logo.png')}}" />
   <link rel="stylesheet" href="{{asset('template/assets/css/styles.min.css')}}" />
   
   
@@ -15,7 +15,7 @@
     border-bottom: 2px solid #eaeaea; /* Warna dan ketebalan garis dapat disesuaikan sesuai kebutuhan */
     }
     .btn-custom {
-    background-color: #893B84;
+    background-color: #2aa8e6;
     color: #fff; /* Warna teks */
     border: none; /* Menghilangkan border */
     padding: 10px 20px; /* Atur padding sesuai kebutuhan */
@@ -25,7 +25,7 @@
     }
 
     .btn-custom:hover {
-    background-color: #D56C3A; /* Warna saat tombol dihover */
+    background-color: #2078a8; /* Warna saat tombol dihover */
     }
   </style>
 </head>
@@ -40,7 +40,7 @@
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index.html" class="text-nowrap logo-img">
-            <img src="{{asset('template/assets/images/logos/logo-swara.png')}}" width="70" alt="" />
+            <img src="{{asset('template/assets/images/logos/Rs_logo.png')}}" width="70" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -68,17 +68,17 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="{{url('admin/posts')}}" aria-expanded="false">
                 <span>
-                  <i class="ti ti-article"></i>
+                  <i class="ti ti-user"></i>
                 </span>
-                <span class="hide-menu">Posts</span>
+                <span class="hide-menu">Pasien</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="{{url('admin/users')}}" aria-expanded="false">
+              <a class="sidebar-link" href="{{url('admin/rekam')}}" aria-expanded="false">
                 <span>
-                  <i class="ti ti-user"></i>
+                  <i class="ti ti-article"></i>
                 </span>
-                <span class="hide-menu">Users</span>
+                <span class="hide-menu">Rekam Medis</span>
               </a>
             </li>
             
@@ -110,7 +110,7 @@
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn-custom">Apalah</a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn-custom">Keluar</a>
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
