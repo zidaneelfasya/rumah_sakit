@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Pasien;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Rekam_medis extends Model
 {
     use HasFactory;
+
     protected $table = 'rekam_medis';
 
     protected $fillable = [
@@ -18,4 +20,11 @@ class Rekam_medis extends Model
         'keterangan',
     ];
 
+    /**
+     * Relasi ke model Pasien.
+     */
+    public function datapasien()
+    {
+        return $this->belongsTo(Pasien::class, 'id_pasien','id');
+    }
 }
