@@ -39,7 +39,7 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index.html" class="text-nowrap logo-img">
+          <a href="./admin/home" class="text-nowrap logo-img">
             <img src="{{asset('template/assets/images/logos/Rs_logo.png')}}" width="70" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -66,7 +66,7 @@
               <span class="hide-menu">Menu</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="{{url('admin/posts')}}" aria-expanded="false">
+              <a class="sidebar-link" href="{{url('admin/pasien')}}" aria-expanded="false">
                 <span>
                   <i class="ti ti-user"></i>
                 </span>
@@ -110,7 +110,7 @@
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn-custom">Keluar</a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn-custom">Logout</a>
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
