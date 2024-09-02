@@ -16,4 +16,7 @@ Route::get('/admin/home', function () {
 });
 Route::get('admin/pasien', [PasienController::class, 'lihatPasien']);
 Route::get('admin/detail', [PasienController::class, 'lihatPasien']);
+Route::get('/admin/pasien/form', function () {
+    return view('formaddpasien');
+});
 Route::get('admin/rekam', [RekamMedisController::class, 'lihatRekam_medis']);
