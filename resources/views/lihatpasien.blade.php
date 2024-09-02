@@ -8,7 +8,7 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-body">
-                <a href="{{ url('') }}" class="btn btn-success btn-sm">
+                <a href="{{ url('admin/pasien/form') }}" class="btn btn-success btn-sm">
                     <i class="ti ti-plus"></i>
                 </a>
                 <br>
