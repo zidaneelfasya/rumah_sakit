@@ -16,17 +16,22 @@
     }
     .btn-custom {
     background-color: #2aa8e6;
-    color: #fff; /* Warna teks */
-    border: none; /* Menghilangkan border */
-    padding: 10px 20px; /* Atur padding sesuai kebutuhan */
-    border-radius: 5px; /* Bulatkan sudut tombol */
-    text-decoration: none; /* Menghilangkan underline pada link */
-    display: inline-block; /* Membuat tombol berada dalam satu baris */
+    color: #fff; 
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    display: inline-block;
     }
 
     .btn-custom:hover {
-    background-color: #2078a8; /* Warna saat tombol dihover */
+    background-color: #2078a8; 
     }
+    .sidebar-item.active > .sidebar-link,
+  .sidebar-item > .sidebar-link:hover {
+    background-color: #2aa8e6; 
+    color: #fff; 
+  }
   </style>
 </head>
 
