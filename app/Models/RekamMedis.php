@@ -6,11 +6,11 @@ use App\Models\Pasien;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Rekam_medis extends Model
+class RekamMedis extends Model
 {
     use HasFactory;
 
-    protected $table = 'rekam_medis';
+    
 
     protected $fillable = [
         'id_pasien',

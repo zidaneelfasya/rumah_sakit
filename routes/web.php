@@ -19,4 +19,5 @@ Route::get('admin/detail', [PasienController::class, 'lihatPasien']);
 Route::get('/admin/pasien/form', function () {
     return view('formaddpasien');
 });
+Route::post('admin/pasien/form/store', [PasienController::class, 'store']);
 Route::get('admin/rekam', [RekamMedisController::class, 'lihatRekam_medis']);

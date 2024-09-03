@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\Rekam_medis;
+use App\Models\RekamMedis;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
 
-class Rekam_medisSeeder extends Seeder
+class RekamMedisSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,7 +16,7 @@ class Rekam_medisSeeder extends Seeder
     {
         $faker = Faker::create();
         for ($i = 1; $i <= 20; $i++) {
-            Rekam_medis::insert(
+            RekamMedis::insert(
                 [
                 'id_pasien' => $i,
                 'tanggal_kunjungan' => $faker->date(),

@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        
         Schema::create('rekam_medis', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_pasien');
@@ -19,7 +20,7 @@ return new class extends Migration
             $table->string('tx');
             $table->text('keterangan');
             $table->timestamps();
-            $table->foreign('id_pasien')->references('id')->on('pasien')->onDelete('cascade');
+            $table->foreign('id_pasien')->references('id')->on('pasiens')->onDelete('cascade');
         });
     }
 

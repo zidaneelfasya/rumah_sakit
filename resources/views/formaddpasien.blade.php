@@ -11,7 +11,7 @@
             <div class="card-body">
                 <div class="row">
                     
-                        <form id="formAddPost" action="{{url('/admin/users/formadd/process')}}" method="post" enctype="multipart/form-data" onsubmit="submitForm()">
+                        <form id="formAddPasien" action="{{url('/admin/pasien/form/store')}}" method="post" enctype="multipart/form-data" onsubmit="submitForm()">
                             @csrf
                             <div class="mb-3">
                                 <label for="nama" class="form-label">Nama</label>
@@ -19,8 +19,8 @@
                                 
                             </div>
                             <div class="mb-3">
-                                <label for="nim" class="form-label">NIK</label>
-                                <input type="number" class="form-control" id="nim" name="nim">
+                                <label for="NIK" class="form-label">NIK</label>
+                                <input type="number" class="form-control" id="NIK" name="NIK">
                             </div>
                             <div class="mb-3">
                                 <label for="alamat" class="form-label">Alamat</label>
