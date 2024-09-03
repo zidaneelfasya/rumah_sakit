@@ -22,7 +22,7 @@ class RekamMedisController extends Controller
     
     public function lihatPasienAPI()
     {
-        $rekam_medis= Rekam_medis::all(); 
+        $rekam_medis= RekamMedis::all(); 
         return response()->json($rekam_medis);
     }
 }
