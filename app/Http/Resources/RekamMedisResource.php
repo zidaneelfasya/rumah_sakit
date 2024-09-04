@@ -16,12 +16,12 @@ class RekamMedisResource extends JsonResource
     {
         return parent::toArray($request);
         return [
-            'id' => $this->id,
-            'tanggal_kunjungan' => $this->tanggal_kunjungan,
-            'diagnosa' => $this->dx,
-            'tindakan' => $this->tx,
-            'keterangan' => $this->keterangan,
-            'pasien' => $this->datapasien,
+            // 'id' => $this->id,
+            // 'tanggal_kunjungan' => $this->tanggal_kunjungan,
+            // 'diagnosa' => $this->dx,
+            // 'tindakan' => $this->tx,
+            // 'keterangan' => $this->keterangan,
+            // 'pasien' => $this->datapasien,
         ];
     }
 }
