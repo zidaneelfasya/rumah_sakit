@@ -28,8 +28,8 @@ class RekamMedisController extends Controller
     }
     public function formadd()
     {
-        $pasien= Pasien::all(); 
-        return view('rekamMedis/formadd',  compact('pasien'));
+        
+        return view('rekamMedis/formadd');
     }
     public function store(Request $request)
     {
@@ -94,4 +94,10 @@ class RekamMedisController extends Controller
         $rekamMedis->delete();
         return redirect('/admin/rekam')->with('success', 'Data pasien berhasil dihapus');
     }
+    public function detailRekam($id)
+{
+    $rekam_medis = RekamMedis::with('datapasien')->findOrFail($id); 
+    return view('rekamMedis/detailrekamMedis', compact('rekam_medis'));
+}
+
 }
