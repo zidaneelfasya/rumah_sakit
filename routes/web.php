@@ -23,6 +23,7 @@ Route::get('/admin/home', function () {
 });
 Route::get('admin/pasien', [PasienController::class, 'lihatPasien']);
 Route::get('admin/detail', [PasienController::class, 'lihatPasien']);
+Route::get('admin/pasien/{id}', [PasienController::class, 'detailPasien']);
 Route::get('/admin/pasien/add', function () {
     return view('pasien/formaddpasien');
 });
@@ -33,6 +34,7 @@ Route::get('admin/pasien/delete/{id}', [PasienController::class, 'delete']);
 
 
 Route::get('admin/rekam', [RekamMedisController::class, 'lihatRekam_medis']);
+Route::get('admin/rekam/{id}', [RekamMedisController::class, 'detailRekamMedis'])->name('rekam.detail');
 
 Route::get('admin/rekam/add', [RekamMedisController::class, 'formadd']);
 Route::post('admin/rekam/add/store', [RekamMedisController::class, 'store']);
