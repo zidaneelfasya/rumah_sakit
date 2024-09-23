@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pasien;
+use App\Models\RekamMedis;
 use Illuminate\Http\Request;
 
 class PasienController extends Controller
@@ -61,5 +62,14 @@ class PasienController extends Controller
         $pasien->delete();
         return redirect('/admin/pasien')->with('success', 'Data pasien berhasil dihapus');
     }
+    public function detailPasien($id)
+    {
+        $pasien = Pasien::findOrFail($id);
+        $rekam_medis = RekamMedis::findOrFail($id);
+
+        return view('pasien/detailpasien', compact('pasien','rekam_medis'));
+    }
+
+
 
 }
