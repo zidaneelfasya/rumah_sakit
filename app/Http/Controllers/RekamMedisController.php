@@ -20,6 +20,12 @@ class RekamMedisController extends Controller
         $rekam_medis = RekamMedis::with('datapasien:id,nama,tanggal_lahir,NIK,alamat')->get(); 
         return view('rekamMedis/lihatrekam_medis',  ['rekam_medis' => RekamMedisResource::collection($rekam_medis)]);
     }
+    public function detailRekamMedis($id)
+    {
+    
+    $rekam_medis = RekamMedis::with('datapasien')->findOrFail($id);
+    return view('rekamMedis/detailrekam', compact('rekam_medis'));
+    }
     
     public function lihatPasienAPI()
     {
