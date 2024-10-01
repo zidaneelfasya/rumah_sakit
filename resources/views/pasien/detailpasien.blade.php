@@ -50,7 +50,7 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-header">
-                <h3>Detail Rekam Medis</h3>
+                <h3>Rekam Medis</h3>
             </div>
             <div class="card-body">
                 <a href="{{ url('admin/rekam') }}" class="btn btn-secondary btn-sm mb-3">
