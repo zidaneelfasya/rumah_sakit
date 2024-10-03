@@ -50,7 +50,8 @@ Route::get('/dokter/rekam', function () {
     return view('dokter/rekammedis');
 });
 
-Route::get('api/pasien', [ApiController::class, 'lihatPasien']); 
-Route::get('api/pasiendetail', [ApiController::class, 'lihatPasienDetail']); 
-Route::get('api/pasien/{id}', [ApiController::class, 'detailPasien']);
-Route::get('api/rekam', [ApiController::class, 'lihatRekam']);
+
+// Route::get('api/pasiendetail', [ApiController::class, 'lihatPasienDetail']); 
+// Route::get('api/pasien/{id}', [ApiController::class, 'detailPasien']);
+// Route::get('api/rekam', [ApiController::class, 'lihatRekam']);
+
